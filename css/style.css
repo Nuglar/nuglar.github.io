@@ -1222,7 +1222,7 @@ h3 {
 .header-area .main-header-area.sticky ul li a::before {
   position: absolute;
   content: "";
-  background: #5DB2FF;
+  background: #5e8765;
   width: 100%;
   height: 3px;
   bottom: -27px;
