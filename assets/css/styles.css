@@ -1,0 +1,75 @@
+/* Bootstrap Overrides */
+:root {
+    --bs-primary: #53716f;
+    --bs-primary-rgb: 83, 113, 111;
+    --bs-secondary: #BF9080;
+    --bs-secondary-rgb: 191, 144, 128;
+    --bs-link-color: #BF9080;
+    --bs-link-color-rgb: 191, 144, 128;
+    --bs-link-hover-color: #53716f;
+}
+
+.btn-primary, .btn-primary:visited {
+    background-color: var(--bs-primary);
+    border-left-color: var(--bs-primary);
+    border-right-color: var(--bs-primary);
+    border-top-color: var(--bs-primary);
+    border-bottom-color: var(--bs-primary);
+}
+
+.btn-primary:hover, .btn-primary:active:focus {
+    background-color: var(--bs-link-hover-color);
+    border-left-color: var(--bs-link-hover-color);
+    border-right-color: var(--bs-link-hover-color);
+    border-top-color: var(--bs-link-hover-color);
+    border-bottom-color: var(--bs-link-hover-color);
+}
+
+body {
+    font-family: 'Poppins', serif !important;
+}
+
+/* Header */
+.index-header {
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 500px
+}
+
+/* Font awesome links */
+.fa-maximize:hover {
+    color:var(--bs-primary)
+}
+
+/* Profile Cards */
+.card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+	max-width: 1000px;
+}
+.full-width {
+    grid-column: 1 / -1;
+}
+.spotlight {
+    background: white;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+/* Alter scroll point for page/id navigation */
+#about, #people, #navBarSwap {
+    scroll-margin-top: 100px;
+}
+
+/* Utilities */
+
+.is-hidden {
+    display: none;
+}
